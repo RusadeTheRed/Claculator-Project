@@ -1,82 +1,99 @@
 
-html {
-  font-size: 70.5%;
-  box-sizing: border-box;
-}
+@import url(https://fonts.google.com/specimen/Space+Mono);
+
+/* html {
+  font-size: 24px;
+} */
 
 body {
   background-color:hsl(185, 41%, 84%);
+  font-family: monospace, sans-serif;
 }
 
 .box {
-  align-content: right;
-  justify-content: auto;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  padding-left: 400px;
 }
 
 .blt {
-  border: solid gray;
-  flex-direction: column;
+  display: flex;
+  flex-direction: row;
   padding: 0px;
   margin: 0px;
   width: 350px;
-  height: 215px;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 25px;
 }
 
 .grn {
-  border: solid green;
+  display: flex;
   flex-direction: column;
   align-content: left;
   padding: 0px 10px;
   width: 600px;
-
+  background-color: white;
+  border: hidden;
 }
-.col {
-  margin: 0 auto;
-  padding: 0 auto;
+
+#custom {
+  background-color: hsl(189, 41%, 97%);
 }
 
  .calculator {
-  /* display: flex; */
+  display: flex;
   flex-wrap: wrap;
-  align-self: right;
-  justify-content: right;
-  border: solid rgb(0, 17, 255);
+  align-self: center;
+  justify-content:center;
   height: 300px;
   width: 500px;
   box-sizing: content-box;
-  padding: 125px 40px 50px 3px;
+  /* padding: 125px 40px 50px 3px; */
+  padding-left: 100px;
+  padding-right: 150px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 30px;
+  margin-right: 200px;
+  margin-left: 0px;
+  border-radius: 25px;
+  background-color: white;
 } 
 
-/* .result {
+.result {
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  border: solid rgb(0, 17, 255);
+  /* align-items: flex-end; */
+  /* justify-content: flex-end; */
   height: 300px;
   width: 400px;
   margin: 25px;
   margin-right: 0px;
   flex-direction: column;
-}  */
+} 
 
 .logo {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: auto;
-  border: solid black;
 }
 
-/* .row {
-  display: flex;
-  flex-wrap: wrap;
-  height: 40px;
-  align-content: space-between;
-  justify-content: flex-start;
-  box-sizing: content-box;
-  padding: 35px ;
-} */
+.tip, .total {
+  font-size: 2rem;
+}
 
-.total {
-  margin: auto;
+.card-text {
+  font-size: 1rem;
+}
+
+.btn {
+  background-color:hsl(183, 100%, 15%);
+}
+.dollar {
+  color:hsl(172, 67%, 45%);
+}
+
+.reset {
+  background-color: hsl(184, 14%, 56%);
 }
